@@ -1,3 +1,4 @@
+import 'package:fikar/all_screens/login_screen.dart';
 import 'package:fikar/all_screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fikar Rider App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
+      home: LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
