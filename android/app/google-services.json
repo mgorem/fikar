@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841249282785",
+    "project_id": "fikar-32468",
+    "storage_bucket": "fikar-32468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841249282785:android:622fb0aee32aded6a0b5a0",
+        "android_client_info": {
+          "package_name": "com.mgin.fikar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841249282785-2eahj3i9i4i8ldq0au15htcpbve3a77c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgkiS5S-XvcJBUAGmxY-eAfTEH6kOLl8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841249282785-2eahj3i9i4i8ldq0au15htcpbve3a77c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
