@@ -1,5 +1,6 @@
 import 'package:fikar/all_screens/login_screen.dart';
 import 'package:fikar/all_screens/main_screen.dart';
+import 'package:fikar/all_screens/register_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      initialRoute: LoginScreen.idScreen,
+      routes:
+      {
+        RegisterScreen.idScreen: (context) => RegisterScreen(),
+        LoginScreen.idScreen: (context) => LoginScreen(),
+        MainScreen.idScreen: (context) => MainScreen(),
+      },
       debugShowCheckedModeBanner: false,
     );
   }

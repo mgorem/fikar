@@ -1,11 +1,11 @@
-import 'package:fikar/all_screens/register_screen.dart';
+import 'package:fikar/all_screens/login_screen.dart';
 import 'package:fikar/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
-  static const String idScreen = "login";
+  static const String idScreen = "register";
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image(
-                    image: AssetImage("images/login.png"),
+                    image: AssetImage("images/signup.png"),
                     width: 250,
                     height: 250,
                     alignment: Alignment.center,
@@ -29,9 +29,28 @@ class LoginScreen extends StatelessWidget {
                     height: 1.0,
                   ),
                   Text(
-                    "Welcome back",
+                    "Fikar Cabs Registration",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                     textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  TextField(
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                      labelText: "Your Name",
+                      labelStyle: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                      hintStyle: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 10.0,
+                      ),
+                    ),
+                    style: TextStyle(
+                      fontSize: 18.0,
+                    ),
                   ),
                   SizedBox(
                     height: 10.0,
@@ -78,7 +97,7 @@ class LoginScreen extends StatelessWidget {
                     width: double.infinity,
                     height: 50,
                     child: CustomButton(
-                        text: "Login",
+                        text: "Register",
                         onPressed: () {
                           print("Clicked");
                         }),
@@ -86,9 +105,9 @@ class LoginScreen extends StatelessWidget {
                   const SizedBox(height: 20.0,),
                   TextButton(
                     onPressed: () {
-                      Navigator.pushNamedAndRemoveUntil(context, RegisterScreen.idScreen, (route) => false);
+                      Navigator.pushNamedAndRemoveUntil(context, LoginScreen.idScreen, (route) => false);
                     },
-                    child: const Text("Don't have an account? Register here,"),
+                    child: const Text("Already have an account? Login."),
                   ),
                 ],
               ),

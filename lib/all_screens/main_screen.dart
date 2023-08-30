@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
+  static const String idScreen = "mainScreen";
+
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
